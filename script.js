@@ -1561,7 +1561,7 @@ __p+='`),
           r = document,
           n = e("html"),
           o = e("body"),
-          i ="",
+          i = ".w-webflow-badge",
           a = window.location,
           s = /PhantomJS/i.test(navigator.userAgent),
           c =
@@ -1587,7 +1587,25 @@ __p+='`),
             !!r.webkitFullscreenElement;
           e(f).attr("style", g ? "display: none !important;" : "");
         }
+        function p() {
+          var g = e('<a class="w-webflowbadge"></a>').attr(
+              "href",
+              "https://webflow.com?utm_campaign=brandjs"
+            ),
+            S = e("<img>")
+              .attr(
+                "src",
+                ""
+              )
 
+            b = e("<img>")
+              .attr(
+                "src",
+                ""
+              )
+              .attr("alt", "");
+          return g.append(S, b), g[0];
+        }
         function h() {
           var g = o.children(i),
             S = g.length && g.get(0) === f,
